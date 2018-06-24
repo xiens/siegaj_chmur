@@ -34,11 +34,8 @@ export class HomePage {
 
   }
 
-
   ionViewDidLoad(){
-
   }
-
 
   presentErrorToast() {
     let toast = this.toastCtrl.create({
