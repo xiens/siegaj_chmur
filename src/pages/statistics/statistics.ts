@@ -16,6 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class StatisticsPage {
 
   tagsArray;
+  
   occurencesArray;
   maxNumOfTags;
 

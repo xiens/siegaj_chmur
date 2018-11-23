@@ -182,6 +182,7 @@ openStatisticsPage(url){
 sortArray(array1, array2){
   //sort tags, by number of occurences descending
   var max_element = 0;
+  
   var j = 0;
   var k = 0;
   var p;
