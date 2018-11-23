@@ -12,7 +12,7 @@ import { StatisticsPage } from '../statistics/statistics';
 export class HomePage {
   
   statisticsPage = StatisticsPage;
-  
+
   url: string;
   urlContent: string; //for counting tags
   listOfUrls;
@@ -35,6 +35,7 @@ export class HomePage {
   }
 
   ionViewDidLoad(){
+    var x;
     this.findGarbageInfo();
   }
 
