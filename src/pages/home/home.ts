@@ -12,6 +12,7 @@ import { StatisticsPage } from '../statistics/statistics';
 export class HomePage {
   
   statisticsPage = StatisticsPage;
+  
   url: string;
   urlContent: string; //for counting tags
   listOfUrls;
