@@ -35,6 +35,7 @@ export class HomePage {
   }
 
   ionViewDidLoad(){
+	var s;
     this.findGarbageInfo();
   }
 
