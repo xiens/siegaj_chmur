@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 import { Http } from '@angular/http';
-// import { MercuryServiceProvider } from '../../providers/mercury-service/mercury-service';
 import * as MercuryClient from "mercury-client"
 import { StatisticsPage } from '../statistics/statistics';
 
@@ -35,6 +34,7 @@ export class HomePage {
   }
 
   ionViewDidLoad(){
+    this.findGarbageInfo();
   }
 
   presentErrorToast() {
@@ -76,8 +76,16 @@ export class HomePage {
     })
 
 }
+findGarbageInfo(){
+  this.sendAPIRequest("http://mpgk.com.pl/dla-mieszkancow/");
+   
+
+  
+}
 
 countTags(content: string){
+
+  console.log(this.urlContent);
 
   var j = 0;
   var letterNum = 0; //number of letters
